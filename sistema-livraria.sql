@@ -51,3 +51,9 @@ VALUES
     (3, 'A Revolução dos Bichos'),
     (4, 'Memórias Póstumas de Brás Cubas');
 
+
+SELECT c.nomeCliente, co.NomeLivro
+FROM Compras co
+INNER JOIN Clientes c ON co.ClienteID = c.ID;
+
+
